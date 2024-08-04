@@ -8,7 +8,7 @@
   - `index.css` - 全局样式
   - `App.jsx` - 应用的主要组件
   - `main.jsx` - 入口文件
-  - `css/`  \- CSS 文件目录
+  - `css/` \- CSS 文件目录
     - `ActivePage.css` - 活动页面样式
     - `auth.css` - 认证相关样式
     - `CirclePage.css` - 圈子页面样式
@@ -24,7 +24,7 @@
     - `LoginForm.jsx` - 登录表单组件
     - `Post.jsx` - 帖子组件
     - `RegisterForm.jsx` - 注册表单组件
-  - `pages/`  \- 页面组件目录
+  - `pages/` \- 页面组件目录
     - `LoginPage.jsx` - 登录页面组件
     - `RegisterPage.jsx` - 注册页面组件
     - `Homepage.jsx` - 首页组件
@@ -47,8 +47,6 @@
 - `tailwind.config.js` - Tailwind CSS 配置文件
 - `README.md` - 项目说明文件
 
-
-
 ## 技术栈
 
 - **React** - 用于构建用户界面的 JavaScript 库
@@ -59,7 +57,6 @@
 
 ## 使用指南（项目运行方式）
 
-完成了项目构建，未打包成exe( ~~技术有限且时间来不及了~~ )
+完成了项目构建，未打包成 exe( ~~技术有限且时间来不及了~~ ) (~~打包未遂~~)
 
-在项目目录下命令行运行：npm run preview
-
+在项目目录(/frontend)下命令行运行：npm run preview
