@@ -7,7 +7,7 @@ export default defineConfig({
     port: 3000, // 设置端口为 3000
   },
   build: {
-    outDir: "./out", // 输出目录
+    outDir: "./dist", // 输出目录
     assetsDir: "assets", // 静态资源目录
     rollupOptions: {
       input: {
