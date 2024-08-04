@@ -1,0 +1,150 @@
+/* src/css/CreateCirclePage.css */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif; /* 或其他你喜欢的字体 */
+  background-color: #e0f7e9;
+}
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 确保容器至少占满整个视口高度 */
+  width: 100vw; /* 确保容器宽度占满整个视口 */
+  box-sizing: border-box; /* 包括边框和内边距在内的总宽度和高度计算 */
+}
+.Page > :nth-child(2) {
+  margin: auto; /* 将第二个子元素在父容器中水平和垂直居中 */
+}
+.CCP-container {
+  width: 1200px; /* 固定宽度 */
+  background-color: #e0f7e9; /* 浅绿色背景色 */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.CCP-h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.CCP-create-circle-form {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.CCP-form-group-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap between elements if needed */
+}
+
+.CCP-form-group,
+.CCP-cover-image-group {
+  flex: 1 1 45%; /* Adjust width of each section */
+}
+
+.CCP-cover-image-group {
+  flex: 0 0 auto; /* Prevent cover image from expanding */
+}
+
+.CCP-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  padding-top: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.CCP-name-area {
+  min-height: 100px; /* 你可以根据需要调整这个值 */
+}
+
+.CCP-description-area {
+  min-height: 200px; /* 高度为原来的两倍 */
+  padding-bottom: 0;
+}
+
+input[type="file"] {
+  display: block;
+  margin-top: 0;
+}
+
+.CCP-submit-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.CCP-submit-button:hover {
+  background-color: #0056b3;
+}
+
+.CCP-error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.CCP-success-message {
+  color: green;
+  font-size: 14px;
+  text-align: center;
+}
+
+.CCP-back-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6c757d; /* Grey color for secondary action */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 10px; /* Space between buttons */
+}
+
+.CCP-back-button:hover {
+  background-color: #5a6268; /* Darker grey on hover */
+}
+
+.CCP-image-preview-container {
+  width: 100%;
+  height: 200px; /* 可以根据需要调整 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+}
+
+.CCP-image-preview {
+  max-width: 100%;
+  max-height: 100%;
+}

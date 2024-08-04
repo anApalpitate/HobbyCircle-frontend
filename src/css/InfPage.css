@@ -1,0 +1,91 @@
+/*  src/css/InfPage.css */
+.IP-Page {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(232, 210, 210); /* 背景色略微柔和 */
+  font-family: "Arial", sans-serif; /* 统一字体 */
+}
+
+.IP-Container {
+  width: 80%;
+  max-width: 1200px; /* 最大宽度限制 */
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px; /* 增加内边距 */
+  background-color: #ffffff; /* 背景色白色 */
+  border-radius: 8px; /* 圆角 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.IP-Title {
+  font-size: 2.5rem; /* 增大标题字体 */
+  font-weight: 700; /* 更加粗体 */
+  color: #333; /* 更深的颜色以增加对比 */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.IP-ClearAllButton {
+  background-color: #ff5722; /* 更明亮的红色 */
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+  border: none;
+  padding: 12px 24px; /* 增加内边距 */
+  font-size: 1.5rem; /* 增大字体 */
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.IP-ClearAllButton:hover {
+  background-color: #88685e; /* 悬停时变暗 */
+}
+
+.IP-List {
+  list-style-type: none;
+  padding: 0;
+}
+
+.IP-Item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0; /* 增加上下内边距 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa; /* 背景色略微柔和 */
+  border-radius: 4px; /* 圆角 */
+  margin-bottom: 10px; /* 项目之间的间隔 */
+}
+
+.IP-Content {
+  flex-grow: 1;
+  font-size: 1.2rem; /* 增大字体 */
+  margin-left: 5%;
+  color: #3c5494; /* 更深的颜色 */
+}
+
+.IP-DeleteButton {
+  background-color: #ff5722; /* 与清空按钮一致 */
+  color: white;
+  border: none;
+  padding: 6px 12px; /* 增加内边距 */
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* 添加过渡效果 */
+  margin-right: 5%;
+}
+
+.IP-DeleteButton:hover {
+  background-color: #e64a19; /* 悬停时变暗 */
+}
+
+.IP-NoNotifications {
+  text-align: center;
+  color: #888;
+  font-size: 2rem; /* 增大字体 */
+  margin-top: 20px;
+}

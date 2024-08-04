@@ -1,0 +1,167 @@
+/* src/css/CirclePage.css */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box; /* 使边框和内边距包含在宽度和高度中 */
+}
+
+.CP-Container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平居中 */
+  background: #f5f5dc; /* 樱花粉色背景，透明度 0.8 */
+  box-sizing: border-box; /* 确保内边距和边框在宽度和高度计算中 */
+}
+
+.CP-MainContent {
+  width: 60vw;
+  min-height: 180vh;
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.8); /* 高透明度的黑色边线 */
+  border-radius: 10px; /* 圆角边框 */
+  background-color: #fff; /* 白色背景 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 轻微的阴影效果 */
+  box-sizing: border-box; /* 确保内边距和边框在宽度和高度计算中 */
+}
+
+.CP-PostButton {
+  width: 80%;
+  background: linear-gradient(
+    135deg,
+    #00bfff,
+    /* 明亮的深天蓝色 */ #1e90ff /* 中等蓝色 */
+  ); /* 渐变背景色，从明亮的深天蓝色到中等蓝色 */
+  transition: background-color 0.3s, box-shadow 0.3s; /* 背景色和阴影过渡效果 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+  color: white;
+  border: none;
+  padding: 12px; /* 增加内边距 */
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  cursor: pointer;
+  text-align: center; /* 文本居中 */
+  font-weight: bold; /* 加粗字体 */
+  border-radius: 8px; /* 圆角边框 */
+  font-size: 1rem; /* 字体大小 */
+}
+
+.CP-PostButton:hover {
+  background: linear-gradient(
+    135deg,
+    #87ceeb,
+    /* 鼠标悬停时的渐变背景色，浅天空蓝色 */ #4682b4 /* 深钢蓝色 */
+  ); /* 鼠标悬停时的渐变背景色，浅天空蓝色到深钢蓝色 */
+}
+
+.CP-PostButton:active {
+  background-color: #4682b4; /* 鼠标点击时的背景色 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 点击时的阴影效果 */
+}
+
+.CP-Post {
+  border: 1px solid #ddd; /* 改为较亮的灰色边框 */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px; /* 圆角边框 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加浅阴影效果 */
+}
+
+.CP-PostTitle {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.CP-PostAuthor {
+  color: gold;
+}
+
+.CP-PostContent {
+  margin: 10px 0;
+}
+
+.CP-PostDate {
+  color: #666;
+  text-align: right;
+}
+
+.CP-CommentSection {
+  margin-top: 10px;
+}
+
+.CP-Comment {
+  margin-bottom: 10px;
+}
+
+.CP-CommentAuthor {
+  font-weight: bold;
+}
+
+.CP-CommentInput {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.CP-DeleteButton {
+  background-color: #f44336; /* 选择你喜欢的颜色 */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.CP-error {
+  text-align: center;
+  color: rgb(1, 0, 0, 0.6); /* 设置文字颜色为白色 */
+  font-size: 1.5rem; /* 增大字体 */
+  font-weight: bold; /* 加粗字体 */
+  background: linear-gradient(45deg, #ff0000, #cc0000); /* 红色渐变背景 */
+  -webkit-background-clip: text; /* 背景剪裁为文字 */
+  background-clip: text; /* 背景剪裁为文字 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+}
+
+.CP-CircleTitle {
+  font-family: "Arial", sans-serif; /* 使用简约字体 */
+  font-size: 4rem; /* 设置适中的字体大小 */
+  font-weight: bold;
+  color: #010208; /* 设置深灰色文本颜色 */
+  margin: 0 auto 20px auto; /* 上下外边距，并使其水平居中 */
+  text-align: center; /* 使标题在容器内居中 */
+  padding: 10px; /* 为标题添加内边距 */
+  width: fit-content; /* 自适应宽度 */
+}
+
+.CP-SeparatorContainer {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.CP-SeparatorContainer::before {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #e0e0e0; /* 线条颜色和粗细 */
+  margin-right: 10px; /* 分隔线与文字之间的间距 */
+  margin-left: 10px; /* 分隔线与文字之间的间距 */
+}
+
+.CP-NoPostsMessage {
+  text-align: center; /* 文本居中 */
+  font-size: 1.5rem; /* 字体大小 */
+  color: #555; /* 字体颜色 */
+  background-color: #f9f9f9; /* 背景色，浅灰色 */
+  border: 1px solid #ddd; /* 边框颜色 */
+  border-radius: 8px; /* 圆角边框 */
+  padding: 20px; /* 内边距 */
+  margin: 20px; /* 外边距 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  font-weight: bold; /* 加粗字体 */
+  text-transform: uppercase; /* 字母大写 */
+}

@@ -1,0 +1,162 @@
+/* src/css/MakePostPage.css */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.MPP-PageContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000; /* 黑色背景 */
+}
+.MPP-Title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.MPP-Content {
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto; /* 居中 */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #ccc; /* 较细的边线 */
+  background-color: #fff; /* 白色背景 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+}
+
+.MPP-CircleName {
+  font-size: 1.8rem; /* 增大字体尺寸 */
+  font-weight: 700; /* 使用更粗的字体 */
+  text-align: center; /* 居中对齐 */
+  margin-bottom: 1.5rem; /* 增加底部间距 */
+  color: #333; /* 深色文字 */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+  background: linear-gradient(45deg, #ff6b6b, #f06595); /* 渐变背景 */
+  -webkit-background-clip: text; /* 确保背景渐变只应用于文字 */
+  background-clip: text; /* 标准属性 */
+  -webkit-text-fill-color: transparent; /* 使文字填充透明 */
+  padding: 0.5rem; /* 增加内边距 */
+  border-radius: 0.5rem; /* 圆角边框 */
+  display: inline-block; /* 使背景和内边距只应用于文本 */
+}
+
+.MPP-hint {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.MPP-TitleInput {
+  font-size: 2rem;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center; /* 中央对齐文本 */
+}
+
+.MPP-TextArea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #160101;
+  border-radius: 5px;
+}
+
+.MPP-ImagePreview {
+  margin-left: 20%;
+  margin-right: 20%;
+  display: grid;
+  width: 60%;
+
+  grid-template-columns: repeat(4, 1fr); /* 4 列 */
+  gap: 10px; /* 图片间距 */
+  margin-bottom: 1rem;
+}
+
+.MPP-ImagePreview img {
+  width: 100%;
+  height: auto; /* 确保图片填满网格单元格 */
+  object-fit: cover; /* 保持图片比例并填充单元格 */
+  border-radius: 5px;
+}
+
+.MPP-UploadButton {
+  display: block;
+  width: 20%;
+  height: 50px;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  background-color: #719be4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.MPP-UploadButton:hover {
+  background-color: #3ec1c1;
+}
+
+.MPP-PublishButton {
+  display: block;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.MPP-PublishButton:hover {
+  background-color: #218838;
+}
+
+.MPP-BackButton {
+  display: block;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 10px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.MPP-BackButton:hover {
+  background-color: #5a6268;
+}
+
+.MPP-Error {
+  text-align: center;
+  color: rgb(1, 0, 0, 0.6); /* 设置文字颜色为白色 */
+  font-size: 1.5rem; /* 增大字体 */
+  font-weight: bold; /* 加粗字体 */
+  background: linear-gradient(45deg, #ff0000, #cc0000); /* 红色渐变背景 */
+  -webkit-background-clip: text; /* 背景剪裁为文字 */
+  background-clip: text; /* 背景剪裁为文字 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+}

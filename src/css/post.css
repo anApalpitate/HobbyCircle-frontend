@@ -1,0 +1,170 @@
+/* src/css/post.css */
+.P-Post {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid black;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.P-PostTitle {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.P-PostAuthor {
+  color: rgb(230, 113, 30);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.P-PostContent {
+  min-height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.P-PostTimestamp {
+  text-align: right;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.P-PostDeleteButton {
+  background-color: #ff4d4d; /* 明亮的红色 */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.P-PostImages {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 创建 4 列的网格 */
+  grid-gap: 10px; /* 网格间距 */
+  margin: 20px 0; /* 上下边距 */
+}
+
+.P-PostImage {
+  width: 100%; /* 图片宽度占据网格单元格的 100% */
+  height: auto; /* 高度自动调整以保持图片比例 */
+  object-fit: cover; /* 确保图片填充单元格且不变形 */
+  border-radius: 5px; /* 圆角边框 */
+}
+
+/* 以下为评论区组件 */
+.P-CommentArea {
+  padding: 1rem;
+  border: 1px solid #69bfd2;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-top: 2rem;
+}
+
+.P-CommentInput {
+  width: 100%;
+  height: 40px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.P-CommentButton {
+  background: linear-gradient(45deg, #4caf50, #2e7d32);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+  margin-left: 80%;
+}
+
+.P-CommentButton:hover {
+  background: linear-gradient(45deg, #388e3c, #1b5e20);
+}
+
+.P-CommentsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.P-CommentArea-Title {
+  font-size: 1.8rem; /* 增大字体以增加标题的视觉冲击力 */
+  font-weight: bold; /* 加粗字体，以突出标题 */
+  color: #333; /* 深色文字，确保良好的对比度 */
+  border-bottom: 2px solid #39ba8a; /* 底部边框使用主题色，增加视觉重点 */
+  padding-bottom: 0.5rem; /* 增加底部内边距，与边框分开 */
+  margin-bottom: 1.5rem; /* 增加底部外边距，标题与内容之间留出空间 */
+  text-align: center; /* 标题居中对齐 */
+  text-transform: uppercase; /* 字母大写，增加视觉冲击力 */
+  letter-spacing: 1px; /* 字母间距，增加可读性 */
+}
+
+.P-CommentItem {
+  background-color: #fafafa; /* 添加背景色以区分评论项 */
+  border-radius: 8px; /* 圆角边框，为评论项增加柔和的感觉 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加轻微的阴影效果 */
+  margin-bottom: 1rem; /* 增加底部外边距，避免评论项贴在一起 */
+}
+
+.P-CommentAuthor {
+  font-weight: bold; /* 加粗作者名字 */
+  color: #333; /* 更深的颜色，增加对比度 */
+  font-size: 1.1rem; /* 增大字体，以突出作者名字 */
+  margin-bottom: 0.5rem; /* 增加底部外边距，作者和内容之间留出空间 */
+}
+
+.P-CommentContent {
+  margin-left: 1rem;
+  margin-top: 0.5rem; /* 增加顶部外边距，为内容提供更多空间 */
+  color: #555; /* 中等灰色字体，确保良好的可读性 */
+  line-height: 1.5; /* 增加行高，提高可读性 */
+}
+
+.P-NoComment {
+  text-align: center;
+}
+
+.P-CommentItem {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.P-CommentContentWrapper {
+  position: relative;
+}
+
+.P-DeleteButton {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+  background-color: #fafafa;
+  color: #e74c3c;
+  border: none;
+  padding: 0.2rem 0.2rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.P-DeleteButton:hover {
+  background-color: #c0392b;
+}

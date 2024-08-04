@@ -1,0 +1,123 @@
+/* src/css/auth.css */
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f0f0ed;
+}
+
+.authForm {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 200%;
+  max-width: 400px;
+}
+
+.authForm h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.authForm input[type="text"],
+.authForm input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.authForm button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+.authForm button:hover {
+  background-color: #0056b3;
+}
+
+.authForm p {
+  text-align: center;
+  color: red;
+}
+
+.authHeader {
+  text-align: center; /* 文本居中对齐 */
+  margin-bottom: 2rem; /* 底部外边距，给标题下方留出空间 */
+  font-size: 6rem; /* 增加字体大小以突出显示 */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* 现代无衬线字体 */
+  color: #3565f5; /* 深色文字，与白色背景形成良好对比 */
+  background: linear-gradient(45deg, #3498db, #2980b9); /* 深蓝色渐变背景 */
+  -webkit-background-clip: text; /* 使背景渐变只应用于文本 */
+  background-clip: text; /* 标准属性，确保背景渐变仅显示在文本上 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 文字阴影效果，增加立体感 */
+  font-weight: bold; /* 字体加粗，增强视觉冲击力 */
+  letter-spacing: 2px; /* 扩展字符间距，增强艺术感 */
+  padding: 10px; /* 增加内边距，给文字周围留出空间 */
+  border-radius: 8px; /* 圆角边框，增加柔和的感觉 */
+}
+
+.authRedirectButton {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem;
+  background-color: #6c757d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+.authRedirectButton:hover {
+  background-color: #5a6268;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.auth-error {
+  color: red;
+  text-align: center;
+}
+
+.authlabel {
+  display: block;
+  margin-bottom: 0.5rem;
+}

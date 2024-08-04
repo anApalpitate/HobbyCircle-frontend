@@ -1,0 +1,98 @@
+/* src/css/ActivePage.css */
+
+/* 外层容器，占据全部页面 */
+.AP-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 占据整个视口高度 */
+  width: 100%;
+}
+
+/* 任务栏样式 */
+.AP-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  /* 根据你的设计调整样式 */
+}
+
+/* 主内容区域 */
+.AP-content {
+  background-color: #eae5e5;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 表格容器样式 */
+.AP-table-container {
+  width: 80%; /* 根据需要调整宽度 */
+  max-width: 1200px; /* 可选：限制最大宽度 */
+  margin-bottom: 20px;
+}
+
+/* 表格样式 */
+.AP-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.AP-table th,
+.AP-table td {
+  border: 1px solid #333; /* 更明显的边框颜色和宽度 */
+  padding: 12px; /* 增加内边距以提高可读性 */
+  text-align: center; /* 所有字体居中 */
+}
+
+.AP-table th {
+  background-color: #f4f4f4;
+  font-weight: bold; /* 表头字体加粗 */
+}
+
+.AP-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* 隔行换色效果 */
+}
+
+.AP-table tbody tr:nth-child(odd) {
+  background-color: #fff; /* 奇行的背景颜色 */
+}
+
+/* 提示信息样式 */
+.AP-hint {
+  width: 80%; /* 根据需要调整宽度 */
+  max-width: 1200px; /* 可选：限制最大宽度 */
+  text-align: center;
+  color: #666;
+}
+
+/* src/css/ActivePage.css */
+
+/* src/css/ActivePage.css */
+
+/* 排序按钮样式 */
+.AP-sort-button {
+  width: 60%; /* 按钮宽度 */
+  background-color: #f1a6cc; /* 按钮背景色（粉色） */
+  color: #fff; /* 按钮文字颜色 */
+  border: none; /* 去掉按钮边框 */
+  padding: 10px 20px; /* 按钮内边距 */
+  font-size: 16px; /* 按钮文字大小 */
+  font-weight: bold; /* 按钮文字加粗 */
+  cursor: pointer; /* 鼠标悬停时显示手型光标 */
+  border-radius: 5px; /* 圆角按钮 */
+  margin-bottom: 20px; /* 按钮下方间距 */
+  transition: background-color 0.3s, transform 0.3s; /* 添加过渡效果 */
+}
+
+.AP-sort-button:hover {
+  background-color: #ff1493; /* 悬停时按钮背景色（更深的粉色） */
+  transform: scale(1.05); /* 悬停时按钮略微放大 */
+}
+
+.AP-sort-button:focus {
+  outline: none; /* 去掉焦点时的默认轮廓 */
+  box-shadow: 0 0 0 3px rgba(255, 20, 147, 0.5); /* 添加焦点时的粉色阴影效果 */
+}

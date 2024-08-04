@@ -1,0 +1,111 @@
+/* 重置默认边距和填充 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  height: 100%;
+  width: 100%;
+}
+/* 基础字体设置 */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* 设置背景颜色 */
+  color: #333; /* 基本文字颜色 */
+}
+
+/* 栅格布局容器 */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 标题样式 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  color: #333; /* 标题颜色 */
+}
+
+/* 链接样式 */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 按钮样式 */
+button {
+  background-color: #007bff; /* 清新的蓝色 */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; /* 平滑的颜色和阴影过渡 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+button:hover {
+  background-color: #0056b3; /* 更深的蓝色 */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* 增强阴影效果 */
+}
+
+button:active {
+  background-color: #004085; /* 更深的蓝色 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 恢复阴影效果 */
+}
+
+button:disabled {
+  background-color: #c6c6c6; /* 灰色背景表示禁用状态 */
+  color: #6c757d; /* 灰色文字表示禁用状态 */
+  cursor: not-allowed; /* 禁用状态的光标 */
+}
+
+/* 输入框和选择框样式 */
+input,
+select,
+textarea {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* 表单布局 */
+form {
+  margin: 1rem 0;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+/* 错误和提示消息 */
+.error {
+  color: #dc3545; /* 错误信息颜色 */
+  text-align: "center";
+}
+
+.success {
+  color: #28a745; /* 成功信息颜色 */
+  text-align: "center";
+}
